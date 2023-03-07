@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - run: sysctl machdep.cpu.brand_string
-      - run: brew list
+      - run: brew list -l
 workflows:
   workflow-mac:
     jobs:
